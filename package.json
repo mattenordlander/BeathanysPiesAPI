@@ -1,0 +1,15 @@
+{
+  "name": "beathanyspiesapi",
+  "version": "1.0.0",
+  "description": "REST APIs for Beathanys Pie Shop",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "BeathanysPiesAPI"
+  },
+  "author": "Mathias Nordlander",
+  "license": "ISC"
+}
