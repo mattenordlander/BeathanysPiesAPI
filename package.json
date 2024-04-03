@@ -11,5 +11,9 @@
     "url": "BeathanysPiesAPI"
   },
   "author": "Mathias Nordlander",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "nodemon": "^3.1.0"
+  }
 }
