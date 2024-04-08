@@ -4,16 +4,21 @@ let app = express();
 let pieRepo = require('./repos/pieRepo')
 // use the express Router obejct
 let router = express.Router();
-let pies = pieRepo.get();
+
 // Create GET to return a list of all  pies
 router.get('/', function (req, res, next){
-    // you should always return status()
-    res.status(200).json({
+
+   pieRepo.get(function(data){
+     // you should always return status()
+     res.status(200).json({
         "status":200,
         "statusText":"OK",
         "message": "All pies retrived",
-        "data":pies
+        "data":data
     });
+   },function(err){
+    next(err);
+   });
 });
 
 // Configure router so all routes are prefixed with /api/v1
