@@ -1,14 +1,10 @@
 // Bring in the express server and create application
 let express = require('express');
 let app = express();
-
+let pieRepo = require('./repos/pieRepo')
 // use the express Router obejct
 let router = express.Router();
-let pies = [
-    {"id": 1, "name": "Apple"},
-    {"id": 2, "name": "Cherry"},
-    {"id": 3, "name": "Peach"},
-];
+let pies = pieRepo.get();
 // Create GET to return a list of all  pies
 router.get('/', function (req, res, next){
     // you should always return status()
