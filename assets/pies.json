@@ -46,5 +46,21 @@
     "slicePrice": 5.99,
     "sliceCalories": 67,
     "imageUrl": "images/pecan.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Blueberry",
+    "wholePrice": 17.99,
+    "slicePrice": 4.99,
+    "sliceCalories": 87,
+    "imageUrl": "images/kiwi.jpg"
+  },
+  {
+    "id": "5c0eeaf0-62ed-45a4-9ee8-782957c557cf",
+    "name": "banana",
+    "wholePrice": 10.99,
+    "slicePrice": 1.99,
+    "sliceCalories": 95,
+    "imageUrl": "images/banana.jpg"
   }
 ]
