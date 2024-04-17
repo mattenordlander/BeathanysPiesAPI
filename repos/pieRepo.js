@@ -1,4 +1,5 @@
 let fs = require('fs');
+let uuid = require('uuid')
 const FILE_NAME = './assets/pies.json';
 let pieRepo = {
     get:function(resolve, reject){
@@ -46,6 +47,9 @@ let pieRepo = {
             }
             else{
                 let pies = JSON.parse(data);
+                if(!newData.id){
+                    newData.id = uuid.v4();
+                }
                 pies.push(newData);
                 fs.writeFile(FILE_NAME, JSON.stringify(pies), function (err){
                     if(err){
