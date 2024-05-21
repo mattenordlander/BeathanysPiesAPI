@@ -2,7 +2,9 @@ let fs = require('fs');
 let uuid = require('uuid')
 const FILE_NAME = './assets/pies.json';
 let pieRepo = {
+    // Function with 2 callbacks
     get:function(resolve, reject){
+        // readFiles first arguement passes that content to the callback function provided as the second argument for "data"
     fs.readFile(FILE_NAME, function(err, data){
         if(err){
             reject(err)
